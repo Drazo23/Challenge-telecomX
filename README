@@ -1,0 +1,80 @@
+Telecom X – Análisis de Evasión de Clientes (Churn)
+
+📌 Descripción del proyecto
+Este proyecto tiene como objetivo analizar la evasión de clientes (Churn) en Telecom X, utilizando técnicas de análisis exploratorio de datos (EDA) con Python.  
+El análisis busca identificar patrones y factores asociados a la cancelación del servicio, con el fin de apoyar futuras estrategias de retención de clientes.
+
+---
+
+🎯 Objetivo
+Comprender el comportamiento de los clientes que abandonan la empresa y detectar variables relevantes que influyen en la evasión, como:
+- Tipo de contrato
+- Método de pago
+- Tiempo de permanencia
+- Gasto del cliente
+
+---
+
+🛠️ Tecnologías utilizadas
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook / Google Colab
+
+---
+
+📂 Estructura del proyecto
+- `TelecomX_LATAM.ipynb`: Notebook principal con todo el análisis.
+- `TelecomX_Data.json`: Dataset original en formato JSON.
+- `TelecomX_diccionario.md`: Diccionario de datos con la descripción de las variables.
+- `README.md`: Descripción general del proyecto.
+
+---
+
+🧹 Limpieza y tratamiento de datos
+- Carga de datos desde archivo JSON.
+- Normalización de datos anidados.
+- Corrección de tipos de datos (por ejemplo, cargos totales).
+- Eliminación de registros con valores inválidos en la variable objetivo (Churn).
+- Creación de la variable `Cuentas_Diarias` a partir del cargo mensual.
+
+---
+
+📊 Análisis Exploratorio de Datos (EDA)
+
+Distribución de Churn
+- Aproximadamente el **26.5%** de los clientes cancelaron el servicio.
+- El **73.5%** permanecen activos.
+
+Variables categóricas
+- **Género**: No se observan diferencias relevantes en la evasión.
+- **Tipo de contrato**:
+  - El contrato *Month-to-month* presenta la mayor tasa de churn.
+  - Los contratos *One year* y *Two year* muestran mayor retención.
+- **Método de pago**:
+  - *Electronic check* es el método con mayor evasión.
+  - Los pagos automáticos presentan menor churn.
+
+Variables numéricas
+- **Total gastado**: Los clientes que permanecen tienden a gastar más.
+- **Tiempo de contrato (tenure)**: A mayor permanencia, menor probabilidad de evasión.
+
+---
+
+🔍 Conclusiones e insights
+- El tipo de contrato es uno de los factores más influyentes en la evasión.
+- Los clientes con contratos cortos y pagos manuales presentan mayor riesgo de churn.
+- La antigüedad del cliente es clave para la retención.
+
+---
+
+💡 Recomendaciones
+- Incentivar contratos de mayor duración.
+- Promover métodos de pago automáticos.
+- Implementar estrategias de retención temprana para clientes nuevos.
+
+---
+
+🚀 Próximos pasos
+- Construcción de modelos predictivos de churn.
+- Segmentación de clientes según riesgo de evasión.
